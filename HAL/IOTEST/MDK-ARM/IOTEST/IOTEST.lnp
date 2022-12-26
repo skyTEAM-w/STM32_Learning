@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"iotest\startup_stm32f103xb.o"
+"iotest\main.o"
+"iotest\gpio.o"
+"iotest\stm32f1xx_it.o"
+"iotest\stm32f1xx_hal_msp.o"
+"iotest\stm32f1xx_hal_gpio_ex.o"
+"iotest\stm32f1xx_hal_tim.o"
+"iotest\stm32f1xx_hal_tim_ex.o"
+"iotest\stm32f1xx_hal.o"
+"iotest\stm32f1xx_hal_rcc.o"
+"iotest\stm32f1xx_hal_rcc_ex.o"
+"iotest\stm32f1xx_hal_gpio.o"
+"iotest\stm32f1xx_hal_dma.o"
+"iotest\stm32f1xx_hal_cortex.o"
+"iotest\stm32f1xx_hal_pwr.o"
+"iotest\stm32f1xx_hal_flash.o"
+"iotest\stm32f1xx_hal_flash_ex.o"
+"iotest\stm32f1xx_hal_exti.o"
+"iotest\system_stm32f1xx.o"
+--strict --scatter "IOTEST\IOTEST.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IOTEST.map" -o IOTEST\IOTEST.axf

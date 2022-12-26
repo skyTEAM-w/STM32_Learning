@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"ir_scan_test\startup_stm32f103xb.o"
+"ir_scan_test\main.o"
+"ir_scan_test\gpio.o"
+"ir_scan_test\usart.o"
+"ir_scan_test\stm32f1xx_it.o"
+"ir_scan_test\stm32f1xx_hal_msp.o"
+"ir_scan_test\stm32f1xx_hal_gpio_ex.o"
+"ir_scan_test\stm32f1xx_hal_tim.o"
+"ir_scan_test\stm32f1xx_hal_tim_ex.o"
+"ir_scan_test\stm32f1xx_hal_uart.o"
+"ir_scan_test\stm32f1xx_hal.o"
+"ir_scan_test\stm32f1xx_hal_rcc.o"
+"ir_scan_test\stm32f1xx_hal_rcc_ex.o"
+"ir_scan_test\stm32f1xx_hal_gpio.o"
+"ir_scan_test\stm32f1xx_hal_dma.o"
+"ir_scan_test\stm32f1xx_hal_cortex.o"
+"ir_scan_test\stm32f1xx_hal_pwr.o"
+"ir_scan_test\stm32f1xx_hal_flash.o"
+"ir_scan_test\stm32f1xx_hal_flash_ex.o"
+"ir_scan_test\stm32f1xx_hal_exti.o"
+"ir_scan_test\system_stm32f1xx.o"
+--library_type=microlib --strict --scatter "IR_Scan_TEST\IR_Scan_TEST.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IR_Scan_TEST.map" -o IR_Scan_TEST\IR_Scan_TEST.axf

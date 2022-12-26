@@ -1,0 +1,6 @@
+--c99 -c --cpu Cortex-M3 -g -O2 --apcs=interwork --split_sections -I ../Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc -I ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I ../Drivers/CMSIS/Include
+-I.\RTE\_LEDTEST
+-IC:\Users\WuChengpei\AppData\Local\Arm\Packs\ARM\CMSIS\5.5.1\CMSIS\Core\Include
+-IC:\Users\WuChengpei\AppData\Local\Arm\Packs\Keil\STM32F1xx_DFP\1.0.5\Device\Include
+-D__UVISION_VERSION="527" -D_RTE_ -DSTM32F10X_MD -DUSE_HAL_DRIVER -DSTM32F103xB
+-o .\ledtest\stm32f1xx_hal.o --omf_browse .\ledtest\stm32f1xx_hal.crf --depend .\ledtest\stm32f1xx_hal.d "../Drivers/STM32F1xx_HAL_Driver/Src/stm32f1xx_hal.c"

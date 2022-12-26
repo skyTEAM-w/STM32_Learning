@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"exit_hal_1\startup_stm32f103xb.o"
+"exit_hal_1\main.o"
+"exit_hal_1\gpio.o"
+"exit_hal_1\usart.o"
+"exit_hal_1\stm32f1xx_it.o"
+"exit_hal_1\stm32f1xx_hal_msp.o"
+"exit_hal_1\stm32f1xx_hal_gpio_ex.o"
+"exit_hal_1\stm32f1xx_hal_tim.o"
+"exit_hal_1\stm32f1xx_hal_tim_ex.o"
+"exit_hal_1\stm32f1xx_hal_uart.o"
+"exit_hal_1\stm32f1xx_hal.o"
+"exit_hal_1\stm32f1xx_hal_rcc.o"
+"exit_hal_1\stm32f1xx_hal_rcc_ex.o"
+"exit_hal_1\stm32f1xx_hal_gpio.o"
+"exit_hal_1\stm32f1xx_hal_dma.o"
+"exit_hal_1\stm32f1xx_hal_cortex.o"
+"exit_hal_1\stm32f1xx_hal_pwr.o"
+"exit_hal_1\stm32f1xx_hal_flash.o"
+"exit_hal_1\stm32f1xx_hal_flash_ex.o"
+"exit_hal_1\stm32f1xx_hal_exti.o"
+"exit_hal_1\system_stm32f1xx.o"
+--ro-base 0x08000000 --entry 0x08000000 --rw-base 0x20000000 --entry Reset_Handler --first __Vectors --strict --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "EXIT_HAL_1.map" -o EXIT_HAL_1\EXIT_HAL_1.axf

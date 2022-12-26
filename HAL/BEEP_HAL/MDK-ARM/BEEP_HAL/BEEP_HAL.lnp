@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"beep_hal\startup_stm32f103xe.o"
+"beep_hal\main.o"
+"beep_hal\gpio.o"
+"beep_hal\stm32f1xx_it.o"
+"beep_hal\stm32f1xx_hal_msp.o"
+"beep_hal\stm32f1xx_hal_gpio_ex.o"
+"beep_hal\stm32f1xx_hal_tim.o"
+"beep_hal\stm32f1xx_hal_tim_ex.o"
+"beep_hal\stm32f1xx_hal.o"
+"beep_hal\stm32f1xx_hal_rcc.o"
+"beep_hal\stm32f1xx_hal_rcc_ex.o"
+"beep_hal\stm32f1xx_hal_gpio.o"
+"beep_hal\stm32f1xx_hal_dma.o"
+"beep_hal\stm32f1xx_hal_cortex.o"
+"beep_hal\stm32f1xx_hal_pwr.o"
+"beep_hal\stm32f1xx_hal_flash.o"
+"beep_hal\stm32f1xx_hal_flash_ex.o"
+"beep_hal\stm32f1xx_hal_exti.o"
+"beep_hal\system_stm32f1xx.o"
+"beep_hal\beep.o"
+--strict --scatter "BEEP_HAL\BEEP_HAL.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "BEEP_HAL.map" -o BEEP_HAL\BEEP_HAL.axf

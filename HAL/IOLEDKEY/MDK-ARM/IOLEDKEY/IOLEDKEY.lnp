@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"ioledkey\startup_stm32f103xb.o"
+"ioledkey\main.o"
+"ioledkey\gpio.o"
+"ioledkey\usart.o"
+"ioledkey\stm32f1xx_it.o"
+"ioledkey\stm32f1xx_hal_msp.o"
+"ioledkey\stm32f1xx_hal_gpio_ex.o"
+"ioledkey\stm32f1xx_hal_tim.o"
+"ioledkey\stm32f1xx_hal_tim_ex.o"
+"ioledkey\stm32f1xx_hal_uart.o"
+"ioledkey\stm32f1xx_hal.o"
+"ioledkey\stm32f1xx_hal_rcc.o"
+"ioledkey\stm32f1xx_hal_rcc_ex.o"
+"ioledkey\stm32f1xx_hal_gpio.o"
+"ioledkey\stm32f1xx_hal_dma.o"
+"ioledkey\stm32f1xx_hal_cortex.o"
+"ioledkey\stm32f1xx_hal_pwr.o"
+"ioledkey\stm32f1xx_hal_flash.o"
+"ioledkey\stm32f1xx_hal_flash_ex.o"
+"ioledkey\stm32f1xx_hal_exti.o"
+"ioledkey\system_stm32f1xx.o"
+--strict --scatter "IOLEDKEY\IOLEDKEY.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "IOLEDKEY.map" -o IOLEDKEY\IOLEDKEY.axf
