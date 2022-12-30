@@ -338,7 +338,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\beep;.\APP\wkup;.\APP\touch_key;.\APP\adc;.\APP\adc_temp;.\APP\lsens;.\APP\dac;.\APP\pwm_dac</IncludePath>
+              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\beep;.\APP\wkup;.\APP\touch_key;.\APP\adc;.\APP\adc_temp;.\APP\lsens;.\APP\dac;.\APP\pwm_dac;.\APP\dma</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -462,6 +462,11 @@
               <FileType>1</FileType>
               <FilePath>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dac.c</FilePath>
             </File>
+            <File>
+              <FileName>stm32f10x_dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Libraries\STM32F10x_StdPeriph_Driver\src\stm32f10x_dma.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -521,6 +526,11 @@
               <FileName>pwm_dac.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\APP\pwm_dac\pwm_dac.c</FilePath>
+            </File>
+            <File>
+              <FileName>dma.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\dma\dma.c</FilePath>
             </File>
           </Files>
         </Group>

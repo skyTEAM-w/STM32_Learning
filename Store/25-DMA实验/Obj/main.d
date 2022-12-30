@@ -35,3 +35,4 @@
 .\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 .\obj\main.o: .\APP\dac\dac.h
 .\obj\main.o: .\APP\key\key.h
+.\obj\main.o: .\APP\dma\dma.h
