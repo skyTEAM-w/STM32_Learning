@@ -1,8 +1,11 @@
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'Target 1'
-compiling flash.c...
+compiling main.c...
+.\APP\tftlcd\tftlcd.h(159): warning:  #1-D: last line of file ends without a newline
+  #endif
+User\main.c: 1 warning, 0 errors
 linking...
-Program Size: Code=4176 RO-data=360 RW-data=32 ZI-data=1240  
+Program Size: Code=8068 RO-data=19088 RW-data=48 ZI-data=5336  
 FromELF: creating hex file...
-".\Obj\Template.axf" - 0 Error(s), 0 Warning(s).
+".\Obj\Template.axf" - 0 Error(s), 1 Warning(s).
 Build Time Elapsed:  00:00:01

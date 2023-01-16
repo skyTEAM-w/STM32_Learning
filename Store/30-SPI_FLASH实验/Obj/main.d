@@ -33,3 +33,7 @@
 .\obj\main.o: .\APP\led\led.h
 .\obj\main.o: .\Public\usart.h
 .\obj\main.o: D:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\main.o: .\APP\tftlcd\tftlcd.h
+.\obj\main.o: .\APP\spi\spi.h
+.\obj\main.o: .\APP\flash\flash.h
+.\obj\main.o: .\APP\key\key.h
